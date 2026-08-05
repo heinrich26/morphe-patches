@@ -56,6 +56,6 @@ object GetProStatusFingerprint : Fingerprint(
     filters = listOf(
         literal(0, opcodes = listOf(Opcode.CONST_4)),
         opcode(Opcode.IF_EQZ, MatchAfterImmediately()),
-        methodCall(smali = "invoke-static {v1}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;")
+        methodCall(smali = "Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;")
     )
 )
