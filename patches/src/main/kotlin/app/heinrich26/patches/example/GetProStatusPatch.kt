@@ -9,7 +9,6 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 @Suppress("unused")
 val getProStatusPatch = bytecodePatch(
     name = "Unlock Pro",
-    description = "Unlocks Pro features.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_MT_CAPSULE)
